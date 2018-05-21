@@ -1,0 +1,50 @@
+
+/home/valgar/tspark/reference-apps/twitter_classifier/scala
+
+sbt assembly
+
+valgar@L530:~/tspark/reference-apps/twitter_classifier/scala$ sbt assembly
+[info] Loading project definition from /home/valgar/tspark/reference-apps/twitter_classifier/scala/project
+[info] Updating {file:/home/valgar/tspark/reference-apps/twitter_classifier/scala/project/}scala-build...
+[info] Resolving org.scala-sbt.ivy#ivy;2.3.0-sbt-2cf13e211b2cb31f0d3b317289dca70[info] Resolving org.fusesource.jansi#jansi;1.4 ...
+[info] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.10.2/jars/sbt-assembly.jar ...
+[info] 	[SUCCESSFUL ] com.eed3si9n#sbt-assembly;0.10.2!sbt-assembly.jar (1807ms)
+[info] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.gseitz/sbt-protobuf/scala_2.10/sbt_0.13/0.3.3/jars/sbt-protobuf.jar ...
+[info] 	[SUCCESSFUL ] com.github.gseitz#sbt-protobuf;0.3.3!sbt-protobuf.jar (1782ms)
+[info] Done updating.
+[info] Set current project to spark-twitter-lang-classifier (in build file:/home/valgar/tspark/reference-apps/twitter_classifier/scala/)
+[info] Updating {file:/home/valgar/tspark/reference-apps/twitter_classifier/scala/}scala...
+[info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-griz[info] Resolving com.fasterxml.jackson.module#jackson-module-scala_2.10;2.4.4 ..[info] Resolving org.fusesource.jansi#jansi;1.4 ...
+[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-twitter_2.10/1.4.0/spark-streaming-twitter_2.10-1.4.0.jar ...
+[info] 	[SUCCESSFUL ] org.apache.spark#spark-streaming-twitter_2.10;1.4.0!spark-streaming-twitter_2.10.jar (203ms)
+[info] downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.3/gson-2.3.jar ...
+[info] 	[SUCCESSFUL ] com.google.code.gson#gson;2.3!gson.jar (195ms)
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.4/scalap-2.10.4.jar ...
+[info] 	[SUCCESSFUL ] org.scala-lang#scalap;2.10.4!scalap.jar (643ms)
+[info] Done updating.
+[info] Compiling 4 Scala sources to /home/valgar/tspark/reference-apps/twitter_classifier/scala/target/scala-2.10/classes...
+[info] 'compiler-interface' not yet compiled for Scala 2.10.4. Compiling...
+[info]   Compilation completed in 18.001 s
+[warn] Multiple main classes detected.  Run 'show discoveredMainClasses' to see the list
+[info] Including: spark-streaming-twitter_2.10-1.4.0.jar
+[info] Including: gson-2.3.jar
+[info] Including: twitter4j-core-3.0.3.jar
+[info] Including: twitter4j-stream-3.0.3.jar
+[info] Including: commons-cli-1.2.jar
+[info] Including: unused-1.0.0.jar
+[info] Including: scala-library-2.10.4.jar
+[info] Checking every *.class/*.jar file's SHA-1.
+[info] Merging files...
+[warn] Merging 'META-INF/LICENSE.txt' with strategy 'first'
+[warn] Merging 'META-INF/MANIFEST.MF' with strategy 'discard'
+[warn] Merging 'META-INF/maven/org.spark-project.spark/unused/pom.properties' with strategy 'first'
+[warn] Merging 'META-INF/maven/org.spark-project.spark/unused/pom.xml' with strategy 'first'
+[warn] Merging 'log4j.properties' with strategy 'discard'
+[warn] Merging 'org/apache/spark/unused/UnusedStubClass.class' with strategy 'first'
+[warn] Strategy 'discard' was applied to 2 files
+[warn] Strategy 'first' was applied to 4 files
+[info] SHA-1: 0bc22b20bb203afcd682a49565f03a60f59a39d8
+[info] Packaging /home/valgar/tspark/reference-apps/twitter_classifier/scala/target/scala-2.10/spark-twitter-lang-classifier-assembly-1.0.jar ...
+[info] Done packaging.
+[success] Total time: 40 s, completed 08-Nov-2016 23:33:38
+
